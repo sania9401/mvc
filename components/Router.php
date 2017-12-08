@@ -10,7 +10,7 @@ class Router {
 
 	public function run()
 	{
-		echo 'work';
+		echo 'working';
 	}
 
 }
