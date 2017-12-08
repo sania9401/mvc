@@ -30,7 +30,7 @@ class Router {
 				//получаем внутренний путь из внешнего
 				$internalRoute=preg_replace("~$uriPattern~", $path, $uri);
 
-				$segments=explode('/', $internalRoute);				                      //разбиваем строку uri
+				$segments=explode('/', $internalRoute);				              //разбиваем строку uri
 				$controllerName=ucfirst(array_shift($segments)).'Controller';     //строим имя контроллера который будет обрабатывать
 				$actionName='action'.ucfirst(array_shift($segments));			  //метод
 			}
